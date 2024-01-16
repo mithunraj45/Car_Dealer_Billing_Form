@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+/* Add a light gray line after each input field */
+.form-group {
+    margin-bottom: 20px;
+    position: relative; /* Ensure relative positioning for pseudo-element */
+}
+
+.form-group:not(:last-child)::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid #ccc; /* Set the color to gray */
+}
+
+hr.custom-line {
+    border: none;
+    border-top: 1px solid #ccc; /* Set the color to gray */
+    margin: 20px 0; /* Add space above and below the line */
+}
+
+/* Add space below the carModel select */
+#carModel {
+    margin-bottom: 15px;
+}
+
+/* Add space below the dealerDiscount input field */
+#dealerDiscount {
+    margin-bottom: 15px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 8px;
+}
+
+.error {
+    font-weight: bold;
+    margin-top: 5px; /* Add some space above the error message */
+}
